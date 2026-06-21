@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>咪咕体育 · 赛事查询与对照指南</title>
+  <style>
+    /* 极简留白 · 窄正文 · 杂志专题式 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f9fafb;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+
+    /* hero 横幅 —— 安静有力 */
+    .hero {
+      margin-bottom: 56px;
+      border-bottom: 2px solid #e9edf2;
+      padding-bottom: 40px;
+    }
+
+    .hero__label {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #64748b;
+      background: #eef2f6;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: #0f172a;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #475569;
+      max-width: 580px;
+    }
+
+    /* 主要章节 */
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: #0f172a;
+      border-left: 4px solid #3b82f6;
+      padding-left: 16px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin: 28px 0 8px;
+      color: #1e293b;
+    }
+
+    p {
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(37, 99, 235, 0.25);
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    a:hover {
+      color: #1e40af;
+      border-bottom-color: #1e40af;
+    }
+
+    /* 轻卡片 · 背景区隔 */
+    .inset-block {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 28px 28px 12px;
+      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      border: 1px solid #edf2f7;
+    }
+
+    .inset-block p:last-of-type {
+      margin-bottom: 16px;
+    }
+
+    .inset-block ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 18px;
+    }
+
+    .inset-block li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 8px;
+      font-size: 0.96rem;
+      color: #334155;
+    }
+
+    .inset-block li::before {
+      content: "·";
+      position: absolute;
+      left: 8px;
+      color: #3b82f6;
+      font-weight: 700;
+    }
+
+    /* 引用 / 小提示 */
+    .footnote {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 40px 0 24px;
+      font-size: 0.92rem;
+      color: #334155;
+      border-left: 3px solid #94a3b8;
+    }
+
+    .footnote strong {
+      color: #0f172a;
+    }
+
+    /* 页尾 */
+    .site-footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .site-footer span {
+      display: inline-block;
+    }
+
+    /* 响应式 */
+    @media (max-width: 520px) {
+      .page { padding: 40px 18px 60px; }
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 0.95rem; }
+      h2 { font-size: 1.3rem; }
+      .inset-block { padding: 20px 18px 8px; }
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- hero 横幅 -->
+    <header class="hero">
+      <span class="hero__label">杂志专题 · 赛事信息</span>
+      <h1>从查询到对照<br>咪咕体育的使用逻辑</h1>
+      <p>不只是直播聚合，也是一套赛事数据与背景信息的对照系统。日常查询、延伸阅读、多维度比较——三种使用场景，一个平台。</p>
+    </header>
+
+    <!-- 背景说明 -->
+    <section>
+      <h2>为什么需要对照式浏览</h2>
+      <p>大多数体育信息工具只解决「在哪里看」的问题，却很少回答「这场比赛意味着什么」。当你在几个联赛、几种数据之间来回切换时，真正需要的是一种<strong>横向比较</strong>的视野——积分、交锋纪录、战术延续性，甚至是裁判尺度的历史偏向。</p>
+      <p>从日常查询的角度看，<a href="https://portal-migusport.com">咪咕体育</a>所整合的赛事入口与数据面板，恰好提供了这种对照的起点。无论是赛前看走势，还是赛后读复盘，你都可以在同一界面里调取多个维度的参考信息，而不必跳转六七个页面。</p>
+      <div class="inset-block">
+        <p><strong>三种常见使用路径</strong></p>
+        <ul>
+          <li><strong>快速查询</strong> —— 某场比赛开球时间、主客队近况、首发预测。</li>
+          <li><strong>对照比较</strong> —— 同轮次多场关键战的数据并列，发现隐藏关联。</li>
+          <li><strong>延伸阅读</strong> —— 赛后分析、历史对话记录、赛季走势图。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 三段自然介绍 (日常查询 / 对照 / 延伸阅读) -->
+    <section>
+      <h2>日常查询 · 不只是比分</h2>
+      <p>在移动端或桌面端打开赛事列表，你看到的不只是比分滚动。每场比赛都附带一个轻量级的背景卡片：联赛阶段、近期交锋、核心球员状态标签。这些信息不需要跳转就能展开，适合在通勤或中场休息时快速扫读。</p>
+
+      <h2>对照 · 把几场比赛放在一起看</h2>
+      <p>同一比赛日，三四场焦点战同时进行。传统的做法是开多个页面或频繁切换。而通过专题聚合页，你可以把英超与西甲、欧冠与欧联的类似对阵拉进同一个视图中。对照的意义在于发现模式——比如某支球队在周中赛事的轮换习惯，或者特定裁判执法的进球率变化。</p>
+
+      <h2>延伸阅读 · 从一场比赛到整个赛季</h2>
+      <p>一场焦点战结束后，很少有人只满足于“谁赢了”。更自然的动作是往下翻：赛季积分榜变化曲线、双方近十次交手记录、赛后数据统计的深层分布。这些内容构成了所谓的“延伸阅读”——它让单场比赛成为理解整个赛季的一个切片。而<a href="https://portal-migusport.com">咪咕体育</a>的页面结构，正是为这种连贯阅读而设计。</p>
+    </section>
+
+    <!-- FAQ 摘要 和 提示 -->
+    <div class="footnote">
+      <strong>📌 常见疑问摘要</strong><br>
+      · 如何快速定位某支球队的下一场比赛？  在顶部搜索框输入队名即可。<br>
+      · 能同时对比不同联赛的积分规则吗？  专题页通常附带规则说明卡片，部分联赛会列出附加赛/降级门槛。<br>
+      · 赛前分析从哪里进入？  比赛详情页有「赛前简报」选项卡，包含预计阵型与伤停更新。
+    </div>
+
+    <p style="font-size: 0.92rem; color: #475569;">如果你习惯了只盯着一场比赛看，试着把视野拉宽——同一个比赛窗口里，往往藏着更丰富的叙事线索。对照不是复杂度，而是另一种简洁。</p>
+
+    <!-- 页尾 -->
+    <footer class="site-footer">
+      <span>内容参考 · 赛事数据与信息对照</span>
+      <span>数据更新以官方为准</span>
+    </footer>
+  </div>
+</body>
+</html>
